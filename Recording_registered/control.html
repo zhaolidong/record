@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我要录课</title>
+		<link rel="stylesheet" type="text/css" href="//cache.yhctech.com/static/css/control_common.css" />
+		<link rel="stylesheet" type="text/css" href="//cache.yhctech.com/static/css/control.css" />
+	</head>
+
+	<body>
+		<nav>
+			<a class="color_blue nav_background_img" href="">新建课程</a>
+			<a href="mycourse.html">我的课程</a>
+			<a href="javascript:;">帮助中心</a>
+		</nav>
+		<div class="content">
+			<!--<div class="mark">
+					<div class="line">
+						<span></span>
+						<i>
+						<i class="bc_blue"></i>
+						</i>
+						<span></span>
+						<i>
+						<i></i>
+						</i>
+						<span></span>
+					</div>
+					<div class="text">
+						<span class="color_blue">信息</span>
+						<span>录制</span>
+						<span>完成</span>
+					</div>
+				</div>-->
+			<div class="input_wrap">
+				<label for="course_title">课程名称：</label>
+				<input id="course_title" autofocus="autofocus" type="text" minlengh="6" maxlength="15" placeholder="最多输入15个字符" value="" />
+			</div>
+			<div class="input_wrap">
+				<label for="author">制作人员：</label>
+				<input id="author" type="text" maxlength="12" placeholder="最多输入12个字符" value="" />
+			</div>
+			<div class="file">
+				<p class="title">课程简介</p>
+				<textarea class="course_introduction" maxlength="30" placeholder="请输入30个以内字符"></textarea>
+			</div>
+			<div class="file">
+				<p class="title">课程封面</p>
+				<div class="file_img">
+					<span class="img_previev">
+							<!--<input id="file_pic" type="file" value="" />-->
+							<img class="file_pic" src=""/>
+							<!--<label for="file_pic"></label>-->
+						</span>
+				</div>
+			</div>
+			<div class="file">
+				<p class="title">录制人数</p>
+				<div class="input_wrap">
+					<input class="radio" type="radio" checked="checked" name="mode" id="individual" value="1" />
+					<label for="individual">单人录制</label>
+				</div>
+				<div class="input_wrap">
+					<input class="radio" type="radio" disabled="disabled" name="mode" id="many_people" value="2" />
+					<label for="many_people">多人录制</label>
+				</div>
+			</div>
+			<div class="btn">完成</div>
+		</div>
+
+	</body>
+	<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="//cache.yhctech.com/static/js/add.js" type="text/javascript" charset="utf-8"></script>
+	<script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="//cache.yhctech.com/static/js/control.js" type="text/javascript" charset="utf-8"></script>
+</html>

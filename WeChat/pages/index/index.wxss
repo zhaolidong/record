@@ -1,0 +1,117 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  /*width: 100%;*/
+  height: 300rpx;
+  /*margin-top: 80rpx;*/
+  /*border-radius: 50%;*/
+}
+
+.userinfo-nickname {
+  color: red;
+}
+
+.usermotto {
+  position: absolute;
+  text-align: center;
+  color: cornflowerblue;
+}
+
+
+/*活动主题*/
+.active_theme{
+  width: 700rpx;
+  height: 190rpx;
+  background: #fff;
+  margin: 20rpx auto 0;
+  border-radius: 2rpx 0 0 0;
+  box-shadow: -10rpx 10rpx 20rpx rgba(193,203,254, 0.1), 10rpx 20rpx rgba(193,203,254, 0.1), -10rpx -10rpx 20rpx rgba(193,203,254, 0.1), 10rpx 10rpx 20rpx rgba(193,203,254, 0.1);
+  position: relative;
+}
+.active_theme i {
+    display: block;
+    background: #abbdff;
+    height: 8rpx;
+    width: 500rpx;
+    border-radius: 2rpx 0 0 0;
+}
+.active_theme .active_img{
+  /*display: inline-block;*/
+  height: 120rpx;
+  width: 120rpx;
+  margin: 0.20rpx 40rpx 0; 
+  float: left;
+}
+.active_theme text{
+  display: block;
+}
+.active_theme .title{
+  color: #edb5b6;
+  font-weight: 600;
+  margin-top: 34rpx;
+  line-height: 36rpx;
+  font-size: 36rpx;
+}
+.active_theme .activeText{
+    color: #323232;
+    font-size: 30rpx;
+    margin-top: 10rpx;
+    line-height: 30rpx;
+    font-weight: 400;
+}
+.active_theme .activeTextEnglish{
+      color: #7a7a7a;
+    font-size: 24rpx;
+    margin-top: 8rpx;
+    font-weight: 100;
+}
+/*活动详情介绍*/
+.active_details{
+    overflow-y: auto;
+    background: #fff;
+    box-shadow: -10rpx 10rpx 20rpx rgba(193,203,254, 0.1), 10rpx 0 20rpx rgba(193,203,254, 0.1), -10rpx 0 20rpx rgba(193,203,254, 0.1), 10rpx 10rpx 20rpx rgba(193,203,254, 0.1);
+    padding-bottom: 20rpx;
+    margin: auto;
+    position: relative;
+    width: 660rpx;
+    z-index: 1;
+}
+.active_details .wrap{
+  overflow: hidden;
+}
+.active_details i{
+    width: 16rpx;
+    height: 16rpx;
+    float: left;
+    /*background: #abbdff;*/
+    display: block;
+    border-radius: 50%;
+    margin: 48rpx 20rpx 0 30rpx;
+}
+.active_details .red{
+  background-color:#edb5b6; 
+}
+.active_details .title{
+    float: left;
+    display: block;
+    margin-top: 36rpx;
+    font-size: 30rpx;
+    color: #323232;
+}
+.active_details .content{
+    float: left;
+    margin-top: 10rpx;
+    margin-left: 66rpx;
+    width: 83%;
+    line-height: 36rpx;
+    font-size: 28rpx;
+    color: #7a7a7a;
+}
+.active_details .content span{
+  color: red;
+  font-weight: bold;
+}

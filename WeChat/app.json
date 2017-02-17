@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/signin/signin",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"#edb5b6",
+    "navigationBarTitleText": "萤火小虫",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,236 @@
+
+.content {
+	height: 17.55rem;
+}
+
+
+
+.content ul>li>.input_wrap {
+	width: 100%;
+	height: 1.4rem;
+	background: #FAFAFA;
+	border: 1px solid #D1D1D1;
+	border-radius: 100px;
+	overflow: hidden;
+}
+
+.content ul>li .code {
+	display: inline-block;
+	width: 5.375rem;
+	height: 1.4rem;
+	margin: 0;
+}
+
+.content ul>li .warning_img {
+	width: 0.5rem;
+	height: 0.5rem;
+	display: inline-block;
+	background: url(../img/close.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: -0.7rem;
+	top: 1.1rem;
+	display: none;
+}
+
+.content ul>li .code_warning_img {
+	left: 0.4rem;
+	top: 1.7rem;
+}
+
+.content ul>li .codebtn {
+	margin: 0;
+	font-size: 0.5rem;
+	line-height: 1.4rem;
+	display: inline-block;
+	color: #ffffff;
+	width: 4.65rem;
+	height: 1.4rem;
+	text-align: center;
+	float: right;
+	border: 1px solid #979797;
+	background-color: #22B8DD;
+	margin-left: 0;
+	cursor: default;
+	border-radius: 0.7rem;
+}
+.content ul>li>.input_wrap>.icon {
+	display: inline-block;
+	height: 0.75rem;
+	width: 0.75rem;
+	margin: 0.3rem 0.4rem;
+	float: left;
+}
+.content ul>li  .codetime{
+	background-color:#ebebeb ;
+	color: #b2b2b2;
+	display: none;
+}
+.content ul>li  .codetime span{
+	display: inline-block;
+	width: 1rem;
+}
+.content ul>li>.input_wrap>.icon {
+	display: inline-block;
+	height: 0.75rem;
+	width: 0.75rem;
+	margin: 0.3rem 0.4rem;
+	float: left;
+}
+.content .code_wrap{
+	margin: 1rem 0;
+}
+.content .warning_wrap{
+	text-align: center;
+	width: 100%;
+	font-size: 0.5rem;
+	height: 0.7rem;
+	color: #FF3251;
+	letter-spacing: 0px;
+}
+.content .warning {
+	display: none;
+	font-size: 0.4rem;
+	text-align: center;
+	width: 100%;
+	letter-spacing: 0px;
+}
+.content .code_warning {
+	width: 50%;
+	width: 50%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+}
+
+.content ul>li>.input_wrap>input {
+	margin-top: 0.35rem;
+	width: 70%;
+	height: 0.7rem;
+	margin-left: 0.2rem;
+	border: none;
+	outline: none;
+	background-color: #FAFAFA;
+	font-size: 0.5rem;
+	text-align: center;
+	float: left;
+}
+
+.content ul>li>.code>input {
+	text-align: center;
+	margin-left: 10%;
+	width: 80%;
+}
+
+.content_food {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 0.9rem;
+}
+
+.content .content_food .checkbox {
+	display: inline-block;
+	height: 0.8rem;
+	width: 0.8rem;
+	float: left;
+}
+
+.content_food .text {
+	margin-left: 0.25rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	float: left;
+	font-size: 0.5rem;
+	color: #B1B1B1;
+	letter-spacing: 0px;
+}
+
+.content_food .text span {
+	color: #3DB9D1;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+.confirm {
+	position: absolute;
+	left: 14.8rem;
+	top: 20.5rem;
+}
+
+/*用户须知页面*/
+        .user_know {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            background: rgba(00, 00, 00, 0.5);
+            display: none;
+        }
+        .user_know .user_know_content {
+            width: 94%;
+            background: #fff;
+            border-radius: 5px;
+            padding-bottom: 1rem;
+            margin: 3rem auto 0;
+        }
+
+        .user_know .user_know_content p {
+            width: 100%;
+            line-height: 2rem;
+            color: #6273d9;
+            text-align: center;
+            height: 2.2rem;
+            font-size: 0.75rem;
+            border-bottom: 1px solid #e8e8e8;
+            font-weight: 700;
+        }
+
+        .user_know .user_know_content span {
+            width: 100%;
+            display: block;
+            color: #b1b1b1;
+            padding-left: 0.75rem;
+            height: 3.35rem;
+            font-size: 10px;
+            line-height: 14px;
+            padding-top: .5rem;
+            padding-right: .75rem;
+
+            /* -webkit-transform-origin-x: 0;
+
+            -webkit-transform: scale(10/12); */
+        }
+
+        .user_know .user_know_content .arguement {
+            width: 100%;
+            height: 18rem;
+            background: #eff1fe;
+            overflow-y: auto;
+            padding:0.5rem  0.75rem;
+            font-size: 0.65rem;
+            color: #535353;
+        }
+
+        .user_know .user_know_content .agree {
+            line-height: 1.8rem;
+            height: 4.15rem;
+            color: #6273d9;
+
+        }
+		.user_know .close{
+			display: inline-block;
+			width: 1rem;
+			height: 1rem;
+			border-radius: 50%;
+			position: absolute;
+			right: 0.25rem;
+			top: 1rem;
+			background: url(http://static.yhctech.com/webservice/views/wx_active_beat_test/img/skymap_close.png) no-repeat;
+			background-size: 100% 100%;
+		}
+       
+
+        
+

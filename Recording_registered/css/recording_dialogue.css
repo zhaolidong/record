@@ -1,0 +1,356 @@
+.wrap .time_set_wrap{
+	width: 100%;
+	position: absolute;
+	top: 1.25rem;
+	z-index: 20;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	display: none;
+}
+.wrap .time_set_wrap .prompt{
+	width: 7.975rem;
+	height: 2.2rem;
+	margin-left: 0.95rem;
+	background: url(http://cache.yhctech.com/static/img/1486604956time_set_prompt_text.png) no-repeat;
+	background-size: 100% 100%;
+}
+.wrap .time_set_wrap .time_set_cont_wrap{
+	width: 100%;
+	height: 1.95rem;
+	background-color:rgba(0,0,0,0.5);
+	border-radius: 0.975rem;
+	padding: 0.35rem 3.375rem;
+	font-size: 0;
+}
+.wrap .time_set_wrap .time_set_cont_wrap span{
+	display: inline-block;
+	text-align: center;
+	line-height: 1.25rem;
+	color: #FFFFFF;
+}
+.wrap .time_set_wrap .time_set_cont_wrap .less,.wrap .time_set_wrap .time_set_cont_wrap .plus{
+	width: 1.25rem;
+	height: 1.25rem;
+	font-size: 1.2rem;
+	text-align: center;
+}
+.wrap_recording .time_set_wrap .time_set_cont_wrap .number{
+	text-align: right;
+	border: none;
+	outline: none;
+	background-color: rgba(0,0,0,0);
+	width: 4rem;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	color: #FFFFFF;
+	font-size: 1.25rem;
+}
+.wrap .time_set_wrap .time_set_cont_wrap .text{
+	margin-left: 0.5rem;
+	width: 0.925rem;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	font-size: 0.9rem;
+}
+.wrap .time_set_wrap .time_set_cont_wrap .plus{
+	margin-left:3.25rem ;
+}
+.wrap .time_set_wrap .set_time_btn_wrap{
+	width: 100%;
+	padding: 0.65rem 5.675rem;
+	overflow: hidden;
+}
+.wrap .time_set_wrap .set_time_btn_wrap .set_time_btn{
+	display: inline-block;
+	float: left;
+	width: 2.375rem;
+	height: 2.375rem;
+	line-height: 2.375rem;
+	font-size: 1rem;
+	text-align: center;
+	background-color: #000000;color: #FFFFFF;
+	border-radius: 50%;
+	box-shadow:0 0 0.25rem rgba(0,0,0,0.6);
+	-moz-box-shadow:0 0 0.25rem rgba(0,0,0,0.6);
+	-webkit-box-shadow:0 0 0.25rem rgba(0,0,0,0.6);
+}
+.wrap .time_set_wrap .set_time_btn_wrap .set_time_confirm{
+	float: right;
+}
+.wrap .end{
+	background-color: #01D6B0;
+}
+/*.black_bc{
+	width: 100%;
+	height: 30.15rem;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:0;
+	z-index: 90;
+	display: none;
+}*/
+.message_view .push_prompt_wrap{
+	width: 100%;
+	height: 5rem;
+	position: relative;
+	margin-bottom: 1.625rem;
+	border: 1px dashed #DC5B46;
+	z-index: 100;
+}
+.message_view .push_prompt_wrap .push_prompt {
+	width: 45%;
+	height: 3rem;
+	background: url(http://cache.yhctech.com/static/img/1486540228push_prompt.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 1rem;
+	right: 2rem;
+}
+.message_view .push_prompt_wrap .close{
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	background: url(http://cache.yhctech.com/static/img/1486540456push_close.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 1.5rem;
+	top: 0.5rem;
+}
+.food{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	border-top: 1px solid rgba(180,182,186,1);
+	padding: 0.35rem 0.5rem 0.2rem; 
+	overflow: hidden;
+	background-color: #EFEFF4;
+}
+.food .switch{
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	background: url(http://cache.yhctech.com/static/img/1486367772key.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: 0.1rem;
+	float: left;
+}
+.food .enter_message_wrap{
+	float: left;
+	margin-left: 0.5rem;
+	width: 12.625rem;
+	border-radius:0.075rem ;
+}
+/*.food .enter_message_wrap .enter_text_wrap {
+	width: 100%;
+	height: 100%;
+}*/
+.food .enter_message_wrap .enter_audio{
+	width:100%;
+	height:  1.8rem;
+	font-size: 0.7rem;
+	font-weight: bolder;
+	border: 1px solid rgba(180,182,186,1);
+	border-radius: 0.2rem;
+	line-height: 1.8rem;
+	color: #353535;
+	text-align: center;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+/*.food .enter_message_wrap .enter_text_wrap{
+	display: none;
+	border: 0.05rem solid #E1E1E1;
+	background-color: #FFFFFF;
+	font-size: 0;
+}*/
+.food .enter_message_wrap .enter_text_content{
+	width: 100%;
+	height: 1.5rem;
+	line-height: 0.9rem;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    font-size:0.75rem;
+    padding: 0.2rem 0.2rem 0;
+	border: none;
+	outline: none;
+    border-radius: 0.1rem;
+    resize: none;
+    display: none;
+}
+.food .enter_img{
+	float: right;
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	margin-top: 0.1rem;
+	background:url(http://cache.yhctech.com/static/img/1486627478addimg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.food .enter_text{
+	float: right;
+	width: 2.5rem;
+	height: 1.8rem;
+	border-radius: 0.2rem;
+	font-size: 0.8rem;
+	text-align: center;
+	line-height: 1.8rem;
+	margin-top: -0.1rem;
+	background-color: #007aff;
+	color: #FFFFFF;
+	border: 1px solid #8c9095;
+	background-size: 100% 100%;
+	font-weight: bold;
+	display: none;
+}
+.end_option{
+	width: 100%;
+	height:3.825rem ;
+	background-color:  rgba(255,255,255,0.7);
+	padding: 0 4.5rem;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	font-size: 0;
+	display: none;
+}
+.end_option .option{
+	float: left;
+	width: 2.2rem;
+	height: 100%;
+	padding: 0.45rem 0;
+}
+.end_option .preview{
+	float: right;
+}
+.end_option .option img{
+	height: 2.2rem;
+	width: 2.2rem;
+	display: block;
+}
+.end_option .option p{
+	color: #888888;
+	text-align: center;
+	font-size:0.6rem ;
+	line-height: 0.825rem;
+	margin-top: 0.25rem;
+}
+.alert_wrap{
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+	}
+.alert_wrap .delete_alert{
+	width: 14rem;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 8.725rem;
+	left: 2.375rem;
+	text-align: center;
+	font-size: 0;
+	padding-top: 1.25rem;
+}
+.alert_wrap .delete_alert .title{
+	font-size: 0.9rem;
+	height: 1.25rem;
+	line-height: 1.25rem;
+}
+.alert_wrap .delete_alert .prompt{
+	font-size: 0.75rem;
+	height: 1.05rem;
+	line-height: 1.05rem;
+	margin-top: 0.45rem;
+	color: #888888;
+}
+.alert_wrap .delete_alert .btn{
+	width: 50%;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	margin-top: 0.75rem;
+	font-size: 0.9rem;
+	display: inline-block;
+	border-top: 1px solid #E5E5E5;
+}
+.alert_wrap .delete_alert .confirm{
+	border-left: 1px solid #e5e5e5;
+	color: #6273D9;
+}
+.prompt_alert{
+	display: none;
+	height: 6rem;
+	width: 6rem;
+	position: absolute;
+	top: 10.475rem;
+	left: 6.375rem;
+	z-index: 100;
+	opacity: 0.7;
+}
+
+.preview_wrap{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 200;
+	display: none;
+}
+.preview_wrap .message_wrap .message_view{
+	width: 100%;
+	min-height: 0;
+	position: relative;
+	left: 0;
+	bottom: 0;
+}
+.preview_wrap .preview_food{
+	position: absolute;
+	width: 100%;
+	height:2.5rem ;
+	bottom: 0;
+	background: url(http://cache.yhctech.com/static/img/1486627560previewfood.png) no-repeat;
+	background-size: 100% 100%;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.preview_wrap .preview_btn{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	/*background: #B48DF1;*/
+	text-align: center;
+	position: absolute;
+	/*bottom: 3.775rem;*/
+    padding: 0.37rem;
+    line-height: 0.95rem;
+    right: 0.25rem;
+    font-size: 0.6rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+.preview_wrap .end_preview_btn{
+	background: #B48DF1;
+	bottom: 3.775rem;
+}
+.preview_wrap .startd_preview_btn{
+	background: #FB2A64;
+	bottom: 6.775rem;
+}
+.preview_wrap .play_preview_btn{
+	background: #01D6B0;
+	bottom: 6.775rem;
+	display: none;
+}
+

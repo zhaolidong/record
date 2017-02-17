@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的课程</title>
+		<link rel="stylesheet" type="text/css" href="http://cache.yhctech.com/static/css/control_common.css" />
+		<link rel="stylesheet" type="text/css" href="http://cache.yhctech.com/static/css/mycourse.css" />
+	</head>
+	<body>
+		<!--nav--begin-->
+		<nav>
+			<a href="control.html">新建课程</a>
+			<a class="color_blue nav_background_img" href="">我的课程</a>
+			<a href="javascript:void(0);">帮助中心</a>
+		</nav>
+		<!--nav--end-->
+		<!--search--begin-->
+		<div class="search_bc">
+			<div class="search_wrap">
+				<input type="text" class="search" maxlength="15" placeholder="搜索全部课程" />
+				<img src="http://cache.yhctech.com/static/img/1486432286search.png"/>
+			</div>
+		</div>
+		<!--search--end-->
+		<!--tab--begin-->
+		<ul class="tab">
+			<li class="tabnav border_color_blue">
+				<div class="tabcont">
+					<span>已发布</span>
+					<strong class="bc_blue">0</strong>
+				</div>
+			</li>
+			<li class="tabnav">
+				<div class="tabcont">
+					<span>已保存</span>
+					<strong>0</strong>
+				</div>
+			</li>
+			<li class="tabnav">
+				<div class="tabcont">
+					<span>等待录制</span>
+					<strong>0</strong>
+				</div>
+			</li>
+		</ul>
+		<!--tab--end-->
+		<!--people_number--begin-->
+		<div class="people_number">
+			<input class="one_pepople select" type="button" value="单人录制" />
+			<input class="many_pepople" type="button" value="多人录制" />
+		</div>
+		<!--people_number--end-->
+		<!--published_list--begin-->
+		<ul class="list published_list">
+			<li>
+				<div class="release_title">
+					<div class="release_name">
+						只要有爱，就是无价<span></span>
+					</div>
+					<div class="release_status">
+						已发布
+					</div>
+				</div>
+				<div class="release_content_wrap">
+					<img src="img/save.png"/>
+					<div class="release_content">
+						<p class="author">录制人员：<span>卜付</span></p>
+						<p class="release_introduction">课程简介：<span>脾气很差的脾气很差的脾气很差的脾气很差的脾气很差的脾气很差的脾气很差的</span></p>
+						<p class="time">时长：<span>00:00:00</span></p>
+					</div>
+				</div>
+				<div class="elease_option">
+					<input class="btn switch_code" type="button" value="关闭授权码"/>
+					<input class="btn viewcode" type="button" value="查看授权码" />
+					<input class="btn preview_course" type="button" value="预览课程"/>
+					<input class="btn delete" type="button" value="删除"/>
+				</div>
+			</li>
+		</ul>
+		<!--published_list--end-->
+		<!--saved_list--begin-->
+		<ul class="list saved_list none">
+			<li>
+				<div class="release_title">
+					<div class="release_name">
+						只要有爱，就是无价<span></span>
+					</div>
+					<div class="release_status">
+						已保存
+					</div>
+				</div>
+				<div class="release_content_wrap">
+					<img src="img/save.png"/>
+					<div class="release_content">
+						<p class="author">录制人员：<span>卜付</span></p>
+						<p class="release_introduction">课程简介：<span>脾气很差的脾气很差的脾气很差的脾气很差的脾气很差的脾气很差的脾气很差的</span></p>
+						<p class="time">时长：<span>00:00:00</span></p>
+					</div>
+				</div>
+				<div class="elease_option">
+					<input class="btn preview" type="button" value="预览/录课" />
+					<input class="btn release saved-release" type="button" value="发布"/>
+					<input class="btn delete" type="button" value="删除"/>
+				</div>
+			</li>
+		</ul>
+		<!--list--end-->
+		<!--wait_list--begin-->
+		<ul class="list wait_list none">
+			<li>
+				<div class="release_title">
+					<div class="release_name">
+						只要有爱，就是无价<span></span>
+					</div>
+					<div class="release_status">
+						等待录制
+					</div>
+				</div>
+				<div class="release_content_wrap">
+					<img src="//cache.yhctech.com/static/img/1487038205save.png"/>
+					<div class="release_content">
+						<p class="author">录制人员：<span>卜付</span></p>
+						<p class="release_introduction">课程简介：<span>脾气很差的脾气很差的脾气很差的脾气很差的脾气很差的脾气很差的脾气很差的</span></p>
+					</div>
+				</div>
+				<div class="elease_option">
+					<input class="btn recording" type="button" value="录课"/>
+					<input class="btn delete" type="button" value="删除"/>
+				</div>
+			</li>
+		</ul>
+		<!--wait_list--end-->
+		<!--alert--begin-->
+		<div class="alert_wrap">
+			<div class="alert_cont delete_alert">
+				<p class="title">删除提示</p>
+				<p class="prompt">确认删除本节课程吗？</p>
+				<span class="btn return">返回</span>
+				<span class="btn confirm">确认</span>
+			</div>
+			<div class="alert_cont code_alert switch_code">
+				<p class="title">您本节课的授权码已开启</p>
+				<p class="conde_number">1111</p>
+				<span class="btn return">返回</span>
+			</div>
+			<div class="alert_cont code_alert code_preview_alert">
+				<p class="title">您本节课的授权码</p>
+				<p class="conde_number">1111</p>
+				<span class="btn return">返回</span>
+			</div>
+		</div>
+		<!--alert--end-->
+	</body>
+	<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="//cache.yhctech.com/static/js/add.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://cache.yhctech.com/static/js/mycourse.js" type="text/javascript" charset="utf-8"></script>
+</html>

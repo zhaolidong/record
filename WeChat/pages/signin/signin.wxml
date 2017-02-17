@@ -1,0 +1,46 @@
+
+<view class="container">
+	<!--轮播图股begin-->
+	<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+		<block wx:for="{{imgUrls}}" wx:key="">
+			<swiper-item>
+				<image src="{{item}}" class="slide-image"/>
+			</swiper-item>
+		</block>
+	</swiper>
+	<!--轮播图end-->
+	<!--参加活动信息begin-->
+	<view class="register_message">
+		<i></i>
+		<!--<image class="active_img" src="{{userInfo.avatarUrl}}" />-->
+    <image class="active_img" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+		<view class="user_wrap">
+      <view>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+      <view wx:if="{{false}}">
+        
+      </view>
+      <block wx:for="{{userMessage.arrtext}}" wx:key="" wx:for-item="i">
+       <view class="activeText_wrap" >
+        <text class="activeText" style="color:{{i.color}};">{{i.text}}</text>
+      </view>
+      </block>
+  	</view>
+    </view>
+  </view>
+	<!--参加活动信息end-->
+
+<!--导航栏begin-->
+<view class="nav">
+	<!--<block wx:for="{{navOption}}" wx:key="">-->
+		<navigator  url="{{navOption[0].url}}" open-type="redirect" hover-class="none" >{{navOption[0].nav}}</navigator>
+		<navigator style="background-color:#abbdff;" open-type="redirect" hover-class="none" url="{{navOption[1].url}}">{{navOption[1].nav}}</navigator>
+		<navigator  url="{{navOption[2].url}}" open-type="redirect" hover-class="none">{{navOption[2].nav}}</navigator>
+		<navigator  url="{{navOption[3].url}}" open-type="redirect" hover-class="none">{{navOption[3].nav}}</navigator>
+	<!--</block>-->
+</view>
+<!--导航栏end-->
+
+
+

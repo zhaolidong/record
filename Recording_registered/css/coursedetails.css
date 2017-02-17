@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul>li{
+	list-style: none;
+}
+body{
+	background-color: #EFF1FE;
+}
+.wrap{
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 0 0.75rem;
+}
+.wrap .title{
+	width: 100%;
+	padding: 0.45rem 0.325rem;
+	height:2.95rem ;
+	line-height: 2.05rem;
+	border-bottom: 1px solid #E5E5E5;
+}
+.wrap .title img{
+	width: 2.175rem;
+	height: 2.175rem;
+	border-radius: 0.3rem;
+	margin-right: 0.5rem;
+	float: left;
+}
+.wrap .title p{
+	font-size: 0.75rem;
+	color: #000000;
+	float: left;
+}
+.wrap .title span{
+	float: right;
+	font-size:0.7rem ;
+	color: #7695EB;
+}
+.wrap .list{
+	padding: 0.5rem 0 2.5rem;
+}
+.wrap .list li{
+	width: 100%;
+	font-size: 0.7rem;
+	line-height: 1.5rem;
+	overflow: hidden;
+}
+.wrap .list li .name{
+	float: left;
+	width: 20%;
+}
+.wrap .list li .text{
+	float: right;
+	max-width: 79%;
+}

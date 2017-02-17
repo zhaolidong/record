@@ -1,0 +1,4 @@
+<block wx:for="{{[1, 2, 3,4,5,6,7]}}">
+  <view> {{index}}: </view>
+  <view> {{item}} </view>
+</block>

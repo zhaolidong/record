@@ -1,0 +1,49 @@
+
+<view class="container">
+	<!--轮播图股begin-->
+	<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+		<block wx:for="{{imgUrls}}" wx:key="">
+			<swiper-item>
+				<image src="{{item}}" class="slide-image"/>
+			</swiper-item>
+		</block>
+	</swiper>
+	<!--轮播图end-->
+	<!--活动主题begin-->
+	<view class="active_theme">
+		<i></i>
+		<image class="active_img" src="{{active.imgUrls}}" />
+		<text class="title">{{active.title}}</text>
+		<text class="activeText">{{active.activeText}}</text>
+		<text class="activeTextEnglish">{{active.activeTextEnglish}}</text>
+	</view>
+	<!--活动主题end-->
+	<!--活动详情介绍begin-->
+	<view class="active_details">
+		<block wx:for="{{activeDetails}}" wx:key="">
+			<view class="wrap">
+				<i style="background-color:{{item.bc}};"></i>
+				<text class="title">{{item.title}}</text>
+				<block wx:for="{{item.content}}" wx:for-item="i" wx:key="">
+					<view>
+						<text class="content">{{i}}</text>
+					</view>
+				</block>
+			</view>
+		</block>
+	</view>
+	<!--活动详情介绍end-->
+</view>
+<!--导航栏begin-->
+<view class="nav">
+	<!--<block wx:for="{{navOption}}" wx:key="">-->
+		<navigator style="background-color:#abbdff;" open-type="redirect" hover-class="none" url="{{navOption[0].url}}" >{{navOption[0].nav}}</navigator>
+		<navigator url="" open-type="redirect" hover-class="none" url="{{navOption[1].url}}">{{navOption[1].nav}}</navigator>
+		<navigator url="" open-type="redirect" hover-class="none"  url="{{navOption[2].url}}">{{navOption[2].nav}}</navigator>
+		<navigator url="" open-type="redirect" hover-class="none"  url="{{navOption[3].url}}">{{navOption[3].nav}}</navigator>
+	<!--</block>-->
+</view>
+<!--导航栏end-->
+
+
+

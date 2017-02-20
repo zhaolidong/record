@@ -7,18 +7,21 @@ jQuery(function($) {
 	};
 	add();
 	window.addEventListener("resize", add, false);
-	function GetRequest() {
-		var url = location.search; //获取url中"?"符后的字串 
-		var theRequest = new Object();
-		if(url.indexOf("?") != -1) {
-			var str = url.substr(1);
-			strs = str.split("&");
-			for(var i = 0; i < strs.length; i++) {
-				theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
-			}
-		}
-		return theRequest;
-	}
+	var $_GET = (function(){
+		    var url = window.document.location.href.toString();
+		    var u = url.split("?");
+		    if(typeof(u[1]) == "string"){
+		        u = u[1].split("&");
+		        var get = {};
+		        for(var i in u){
+		            var j = u[i].split("=");
+		            get[j[0]] = j[1];
+		        }
+		        return get;
+		    } else {
+		        return {};
+		    }
+		})();
 
 	function setCookie(name, value) {
 		var argv = setCookie.arguments;
@@ -43,21 +46,30 @@ jQuery(function($) {
 			} else return ""
 		}
 	}
-	var headimgurl = getCookie("headimgurl"),
+	var login = getCookie("_yhcp00001"),
+		openid = getCookie("openid"),
+		headimgurl = getCookie("headimgurl"),
 		nickname = getCookie("nickname");
-	var Request = new Object();
-	Request = GetRequest();
-	if(Request.headimgurl == undefined ||Request.headimgurl == "") {
-		if(headimgurl == undefined || headimgurl == "" || nickname == "" ||nickname==undefined) {
-			var wxurl = encodeURIComponent(window.location.href);
-			window.location.href = 'http://m.yhctech.com/wxpay/wxinfo?appid_type=1&redirect=' + wxurl + '&scope=snsapi_userinfo';
+		console.log(login+'\n'+openid)
+	if(login){
+		if($_GET.openid == undefined||$_GET.headimgurl == undefined ||$_GET.headimgurl == "") {
+			if(openid == undefined || openid == "" || headimgurl == undefined || headimgurl == "" || nickname == "" ||nickname==undefined) {
+				var wxurl = encodeURIComponent(window.location.href);
+				window.location.href = 'http://m.yhctech.com/wxpay/wxinfo?appid_type=1&redirect=' + wxurl + '&scope=snsapi_userinfo';
+			}
+		} else {
+			var openid = $_GET.openid,
+				headimgurl = decodeURI($_GET.headimgurl),
+				nickname = decodeURI($_GET.nickname);
+			setCookie("openid", openid);
+			setCookie("headimgurl", headimgurl);
+			setCookie("nickname", nickname);
 		}
-	} else {
-		var headimgurl = encodeURI(Request.headimgurl),
-			nickname = Request.nickname;
-		setCookie("headimgurl", headimgurl);
-		setCookie("nickname", nickname);
+	}else{
+		var xurl = encodeURIComponent(window.location.href);
+		window.location.href = 'http://foreend.yhctech.cn/lubo/login?type=small_media&agenttype=5&next='+xurl;
 	}
+	
 
 	
 

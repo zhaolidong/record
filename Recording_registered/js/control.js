@@ -69,21 +69,21 @@ jQuery(function() {
 			} else {
 				alert($('#course_title').val())
 				window.location.href = 'http://cache.yhctech.com/test/recording_dialogue.html?lesson_name='+$('#course_title').val();
-//				$.ajax({
-//					type: "post",
-//					url: "http://{{host}}/api/v1/lessoninfos",
-//					async: true,
-//					data: data,
-//					success: function(res) {
-//						if(res.code=='A00000') {
-//							setTimeout(function(){
-//								window.location.href = 'http://{{host}}/recording_dialogue.html?lesson_name='+res.data.lesson_name;
-//							},2000)
-//						} else {
-//							alert('res.msg')
-//						}
-//					}
-//				});
+				$.ajax({
+					type: "post",
+					url: "http://courserecord.c8fa4f365882a4c1d85c4e89ba8b6942e.cn-beijing.alicontainer.com/api/v1/lessoninfos",
+					async: true,
+					data: data,
+					success: function(res) {
+						if(res.code=='A00000') {
+							setTimeout(function(){
+								window.location.href = 'http://{{host}}/recording_dialogue.html?lesson_name='+res.data.lesson_name;
+							},2000)
+						} else {
+							alert('res.msg')
+						}
+					}
+				});
 			}
 
 		})
